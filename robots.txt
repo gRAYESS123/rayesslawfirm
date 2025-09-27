@@ -1,0 +1,33 @@
+# Robots.txt for rayesslawfirm.com
+# Allow all web crawlers access to all content
+
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+Disallow: /tmp/
+Disallow: /*.pdf$
+Crawl-delay: 1
+
+# Googlebot specific rules
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+# Bingbot specific rules
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+# Block bad bots
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Crawl-delay: 10
+
+# Sitemap location
+Sitemap: https://rayesslawfirm.com/sitemap.xml
